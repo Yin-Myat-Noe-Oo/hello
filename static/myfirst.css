@@ -1,0 +1,20 @@
+body{
+    background-color: lightblue;
+    font-family: verdana;
+}
+.ok{color: blueviolet;}
+img{width: 15%;}
+.destinations-container {
+    display: block; /* Set container to block to stack items vertically */
+    padding: 10px;  /* Optional: Add padding to the container */
+}
+
+.destination-item {
+    width: 100%; /* Make each item take up 100% of the container width */
+    box-sizing: border-box; /* Ensure padding and border are included in the width */
+    padding: 10px;  /* Optional: Add padding to each item */
+    border: 1px solid #ccc;  /* Optional: Border around each item */
+    border-radius: 5px; /* Optional: Rounded corners */
+    text-align: center; /* Center the text and content */
+    margin-bottom: 20px;  /* Optional: Add some space between each item */
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'myfirst.css' %}">
+    </head>
+<body>
+<div class="destinations-container">
+
+{% for dests in dest %}
+<div class="destination-item">
+<h1 class="ok">Hello Vera</h1><br>
+<img src="{{dests.img }}" alt="{{ dests.name }}"><br>
+<div>From $ {{price}} </div>
+<div class="destination_content">
+    <a href="destination.html">{{dests.name}}Bali</a>
+    <p>{{dests.desc}}</p>
+    <p>{{dests.uni}}</p>
+    {% if dests.offer %}
+    <p>Hell</p>
+    {% endif %}
+</div>
+</div>
+
+{% endfor %}
+</div>
+</body>
+</html>
